@@ -76,7 +76,7 @@ export function createMatrixView(data, initialMode) {
           d3.min(d.days, (dd) => dd.min),
           d3.max(d.days, (dd) => dd.max),
         ])
-        .range([cellHeight - 2, 2]);
+        .range([cellHeight - 10, 10]);
 
       const lineMax = d3
         .line()
